@@ -1,0 +1,41 @@
+.slider{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; 
+}
+
+canvas {
+  width:inherit;
+  height:inherit;
+  position:inherit;
+  top:inherit;
+  left:inherit;
+  z-index:inherit;
+}
+
+#sc {
+  width:100% !important;
+  height:100% !important;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+.myclass {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b2b2b2;
+  color: rgb(0, 0, 0);
+  text-decoration: none; /* Removes the underline */
+  border-radius: 5px;
+  border: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.myclass:hover{
+  background-color: #989898;
+}
+
