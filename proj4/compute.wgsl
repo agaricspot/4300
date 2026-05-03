@@ -52,7 +52,6 @@ fn cs( @builtin(global_invocation_id) _cell:vec3u ) {
   let fLocal = fk.x;
   let kLocal = fk.y;
 
-  //if()
 
   //laplacian transform, standard weight 
   for( var s = 0u; s < steps; s++){
@@ -78,7 +77,7 @@ fn cs( @builtin(global_invocation_id) _cell:vec3u ) {
       statein[index(cell.x, cell.y+1)*2+1] * .2 + 
       statein[index(cell.x+1, cell.y+1)*2+1] * .05;
 
-    let react = a * b * b;
+    let react = a * b*b;
     a = clamp(a + (da * lapA - react + fLocal * (1. - a)) * dt, 0., 1.);
     b = clamp(b + (db * lapB + react - (kLocal + fLocal) * b) * dt, 0., 1.);
   }

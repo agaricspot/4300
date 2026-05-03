@@ -7,9 +7,8 @@ const sg      = await seagulls.init(),
       render  = seagulls.constants.vertex + frag,
       width   = (seagulls.width),
       height  = (seagulls.height),
-      grid    = new Float32Array(width*height*2),
-      fmap    = new Float32Array(width * height * 2).fill(.055),
-      kmap    = new Float32Array(width * height * 2).fill(.062);
+      grid    = new Float32Array(width*height*2);
+
 
 
 // setup grid
